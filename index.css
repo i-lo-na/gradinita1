@@ -1,0 +1,103 @@
+.logo {
+    width: 283px;
+  }
+  .header {
+    background-color: #234e19;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    align-items: center;
+  }
+  .content{
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto;
+  }
+  .poze img{
+    width: 200px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .meniuhamburger {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    display: none;
+  }
+  .line {
+    height: 5px;
+    width: 40px;
+    background-color: #ba8d56;
+    position: absolute;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+  }
+  .line1 {
+    top: 0;
+ 
+  }
+  .line2 {
+    top: 13px;
+    opacity: 1;
+  }
+  .line3 {
+    top: 25px;
+         
+  }
+  @media (max-width: 990px) {
+    .meniuhamburger {
+      display: block;
+    }
+    .meniu-items {
+      display: none;
+    }
+    .meniu-open .meniu-items {
+      display: flex;
+      position: absolute;
+      top: 84px;
+      background-color: #234e19;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+    }
+
+    .meniu-open .line1 {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 14px;
+      left: 0px;
+      width: 50px;
+    }
+    .meniu-open .line2 {
+     opacity: 0;
+    }
+    .meniu-open .line3 {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 14px;
+      left: 0px;
+      width: 50px;
+    }
+    .meniu-open a {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-bottom: 1px solid black;
+      margin-left: 0;
+      padding-left: 10px;
+    }
+  }

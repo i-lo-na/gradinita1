@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <img class="logo" src="images/logo.svg" alt="" />
+        <div class="meniuhamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <div class="meniu-items">
+          <a href="/despre.html">Despre BEST</a>
+          <a href="/admitere.html">Admiteri</a>
+          <a href="/galerie.html">Galerie</a>
+          <a href="">Testimoniale</a>
+          <a href="">Cariere</a>
+          <a href="">Stiri si Info</a>
+          <a href="">Jocuri</a>
+          <a href="">RO</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+        <p> asta e pagina admitere</p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam velit hic amet, voluptate dicta itaque dolore sunt iure sapiente culpa, architecto, omnis assumenda asperiores sint harum nihil rerum soluta voluptatum?
+        </p>
+    </div>
+    <script>
+      document
+        .querySelector(".meniuhamburger")
+        .addEventListener("click", () => {
+          document.querySelector(".header").classList.toggle("meniu-open");
+        });
+    </script>
+  </body>
+</html>
